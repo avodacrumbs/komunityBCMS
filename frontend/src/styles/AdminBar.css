@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.sidebar {
+  width: 270px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-top: 20px;
+  border-right: 1px solid #ccc;
+  
+}
+.sidebar a.active {
+  background-color: #28a745; /* The same color as the hover effect */
+  color: white;
+  height: 20px;
+
+}
+
+.logo img {
+  width: 100%; /* Makes the logo scale with the sidebar */
+  max-width: 200px; /* Maximum width of the logo */
+  margin-left: 0; /* Center it naturally */
+}
+
+.sidebar a {
+  display: block;
+  color: #333;
+  padding: 8px 30px; /* Reduced padding to decrease the overall height */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 4px 0; /* Adds spacing between each link */
+ 
+}
+.sidebar a:hover {
+  background-color: #28a745;
+  color: white;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar a {
+    padding: 8px 20px; /* Reduce padding for smaller screens */
+  }
+}
+@media (max-width: 576px) {
+  .sidebar a {
+    padding: 8px 15px; /* Further reduce padding */
+  }
+}
+
+
+.logbtn {
+  display: block;
+  width: 250px; /* Default width for desktop */
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Spacing adjustment */
+}
+@media (max-width: 768px) {
+  .logbtn {
+    width: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .logbtn {
+    width: 150px;
+  }
+}
+

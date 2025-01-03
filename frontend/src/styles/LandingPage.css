@@ -1,0 +1,203 @@
+.landing-page {
+  font-family: Arial, sans-serif;
+}
+.title{
+  margin-left: -4%;
+}
+.content {
+  padding: 20px;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.actions .btn {
+  padding: 8px 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions .btn:hover {
+  background-color: #218838;
+}
+
+.actions .btn-secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+.actions .btn-secondary:hover {
+  background-color: #b3b3b3;
+}
+.fin{
+  width: 100%;
+}
+.title {
+  margin-bottom: 10px; /* Space between title and content */
+  margin-left: 10%;
+}
+
+.members {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: auto; /* Center the container */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 1180px; /* Set a fixed width */
+  max-width: 1180px;
+
+  overflow-x: auto; /* Add horizontal scrolling if necessary */
+  margin-left: 10%;
+  
+}
+
+.members table {
+    width: 100%; /* Ensure table takes full width of the container */
+    border-collapse: collapse;
+}
+
+/* Fixed margin for the table */
+.members table {
+    margin: 0; /* Reset margin to avoid shifting */
+}
+.members th, .members td {
+  text-align: left;
+  padding: 7px;
+  border-bottom: 1px solid #ccc;
+  
+}
+.members th {
+  background-color: #28a745;
+  color: white;
+}
+.members tr {
+  height: 40px; /* Ensures minimum row height */
+}
+
+.members tr:nth-child(even) {
+  background-color: #f0f8f5;
+}
+
+/* Additional Responsive Adjustment */
+@media (max-width: 1000px) {
+    .members {
+        width: 100%; /* Allow it to be responsive on smaller screens */
+    }
+}
+
+/* Add styles for pagination */
+.paginations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 75%;
+}
+
+.paginations button {
+  border: none;
+  background: none;
+  color: #333;
+  margin: 0 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.paginations button.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.paginations button:disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.paginations button:hover:not(:disabled) {
+  background-color: #ddd;
+}
+.btnreg {
+  width: 10%;
+  margin-left: 1px;
+  background-color: #28a745;
+  text-decoration: none;
+  padding: 8px 5px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnreg:hover {
+  background-color: #218838;
+}
+
+.actlink, .delete {
+  padding: 2px;
+  margin-left: 1px;
+  background-color: #28a745;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actlink, .delete {
+  background: none;
+  border: none;
+  color: #333; /* Icon color */
+  cursor: pointer;
+  font-size: 16px; /* Adjust the size of the icons */
+  padding: 0 5px; /* Space between the icon and the vertical bar */
+  width: 40px;
+}
+.actlink{
+  color: green;
+}
+.delete{
+  color: red;
+}
+.action-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.action-buttons .divider {
+  margin: 0 5px;
+  color: #333; /* Color of the vertical bar */
+}
+
+.actlink:hover {
+  background-color:  #c3e6cb; /* Change color on hover (optional) */
+}
+
+.delete:hover{
+background-color: #f5c6cb;
+}
+.map{
+  width: 1230px;
+
+  height: 80vh;
+  margin-left: 11%;
+}
+.map-id{
+  width: 1230px;
+  height: 80vh;
+  
+}
+.map-page{
+  margin-top: 5%
+}
+.map-title{
+  margin-left: 11%;
+}
+.input-form{
+  margin-left: 11%;
+  width: 250px;
+}

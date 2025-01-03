@@ -1,0 +1,195 @@
+/* Basic modal container styles */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form {
+  position: relative; /* Ensure that the close button positions relative to this container */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  padding-right: 6%;
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #28a745; /* Green color for the header */
+  font-size: 22px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.single-center {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between the label and select */
+  align-items: center; /* Align label and select vertically */
+  margin-bottom: 15px;
+}
+
+.single-center .form-group {
+  flex-direction: row; /* Set direction to row to align label and select side by side */
+}
+
+.role-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 98.5%;
+}
+
+.form-group input[type="password"] {
+  width: 92%;
+}
+
+.single-center .form-group select {
+  width: 150px; /* Width for select input */
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%; /* Full width for the button */
+  margin: 0 auto; /* Center the button */
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #28a745; /* Green button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #218838; /* Slightly darker green on hover */
+}
+
+.role-label {
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px; /* Space between the label and select */
+  width: 120px; /* Fixed width for label */
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Close button style */
+.close-btns {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  color: gray;
+  background-color: #E1E1E1;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px; /* Slightly smaller font size */
+}
+
+.close-btns:hover {
+  background-color: #CFCFCF;
+}
+
+/* Add styles for modal overlay */
+.modal-overlays {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is on top */
+}
+
+/* Modal content styles */
+.modal-contents {
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Button styles for registration */
+.btnreg {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btnreg:hover {
+  background-color: #45a049;
+}
+
+/* Password container and eye icon styles */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 87%;
+  padding-right: 40px; /* Space for the eye icon */
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}

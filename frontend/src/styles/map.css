@@ -1,0 +1,235 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+
+  }
+  
+  .map-page {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    width: 1250px;
+    background-color: white;
+    margin-top: -20%;
+    margin-left: -31.5%;
+   
+    
+  }
+  
+  .content {
+    width: 1200px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  /* Search bar styling */
+  .search-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-right: auto;
+  }
+  
+  .search-wrapper input {
+    flex: 1;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 700px;
+    
+  }
+  
+  .search-wrapper button {
+    margin-top: 1px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;  
+    width: 200px;
+  }
+  
+  .search-wrapper button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table styling */
+  .resident-list {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  .resident-list table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+  
+  .resident-list th,
+  .resident-list td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .resident-list th {
+    background-color: #f4f4f4;
+  }
+  
+  .resident-list tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .hidden-column {
+    display: none;
+  }
+  
+  /* Save button styling */
+  .save-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 200px;
+    margin-right: auto;
+    margin-left: 1px;
+  }
+  
+  .save-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Map styling */
+  .map {
+    width: 1200px;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: auto;
+  }
+  @media (max-width: 768px) {
+    .search-wrapper {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .search-wrapper input {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .resident-list table {
+      font-size: 14px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  .export {
+    background-color: white;
+    max-height: 81vh;  /* Set a max height to fit the screen */
+    overflow-y: auto;  /* Enable scrolling */
+    padding: 20px;
+    margin-top: 1.5%;
+    width: 1180px;
+    max-width: 1180px;
+    margin-left: 10.5%;
+    display: flex; /* Ensure child elements are in the same row */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.export h2 {
+    margin-top: 20px;
+}
+
+.export table th {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Search wrapper and filters should both be on the same row */
+.search-wrappers, .filters {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Vertically center items */
+    justify-content: flex-start; /* Align items to the left */
+    
+}
+
+.search-wrappers {
+    flex: 1;  /* Take up available space */
+    max-width: 30%; /* Set a max width for the search wrapper */
+
+}
+
+.search-wrappers input {
+    padding: 9px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Make input fill the container */
+}
+
+
+.members2 {
+    margin-top: 1rem;
+}
+
+.members2 th, .members2 td {
+    text-align: left;
+    padding: 7px;
+    border-bottom: 1px solid #ccc;
+}
+
+.members2 th {
+    background-color: #28a745;
+    color: white;
+}
+
+.members2 tr {
+    height: 40px; /* Ensures minimum row height */
+}
+
+.members2 tr:nth-child(even) {
+    background-color: #f0f8f5;
+}
+
+/* Filters should stay in the same line */
+.filters {
+    flex: 1; /* Take up remaining space */
+    gap: 15px; /* Space between filters */
+    max-width: 43%; /* Set a max width for the filters */
+    margin-left: auto;
+    margin-top: -3.3%;
+    margin-right: 26.2%;
+}
+
+/* Filter select styling */
+.filters select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 40px;
+    min-width: 150px; /* Set a minimum width for select elements */
+}
+.download-btn{
+  width: 200px;
+  margin-left: auto;
+  margin-top: -3.3%;
+}

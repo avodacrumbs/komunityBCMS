@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .logo h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #28a745;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .sidebar a:hover {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .admin-landing-layout {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 220px; /* Adjust based on Sidebar width */
+    width: calc(100% - 220px); /* Adjust width based on Sidebar width */
+    padding: 10px 20px; /* Add padding for spacing */
+    border-bottom: 1px solid #ccc; /* Border at the bottom of Header */
+    z-index: 1000; /* Ensure Header is above Sidebar */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header .search-bar input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+  }
+  
+  .header .search-bar button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .header .search-bar button:hover {
+    background-color: #218838;
+  }
+  
+  .header .user-info {
+    font-size: 16px;
+    color: #333;
+    margin-left: 20px; /* Add margin if needed */
+  }
+  
+  .content {
+    margin-left: 220px; /* Ensure content area is not under Sidebar */
+    margin-top: 60px; /* Adjust based on Header height */
+    padding: 20px; /* Add padding for content */
+  }
+  
